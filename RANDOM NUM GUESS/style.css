@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: black;
+    background: url('https://img.freepik.com/free-vector/flat-background-world-autism-awareness-day_23-2151263487.jpg?semt=ais_hybrid');
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card{
+    width: 400px;
+    height: 400px;
+    background: url('https://previews.123rf.com/images/corbendallas/corbendallas1811/corbendallas181100481/127652214-light-blue-background-puzzle-banner-presentation-frame-jigsaw-puzzle-banner-vector-illustration.jpg') ;
+   background-size: cover;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:0px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+.input{
+    margin:15px;
+  
+}
+#guess{
+    width:300px;
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    outline:none;
+    font-size:16px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+#guess:hover{
+    cursor:grab;
+}
+#guess::-webkit-inner-spin-button,::-webkit-outer-spin-button{
+    display: none;
+} 
+.input button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border:none;
+    font-weight: bold;
+    background:radial-gradient(rgb(255, 133, 3),rgb(187, 223, 5));
+}
+h3{
+    font-weight: bold;
+}
+.input button:hover{
+    background:radial-gradient(rgb(187, 223, 5),rgb(255, 133, 3));
+    box-shadow: 0 0 20px rgb(255, 133, 3);
+    transition: background 0.5s;
+    cursor:grab;
+}
+.input button:active{
+    transform: scale(0.9);
+}
+#playAgain{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border:none;
+    font-weight: bold;
+    background:radial-gradient(rgb(100, 255, 3),rgb(20, 102, 4));
+}
+#playAgain:hover{
+    background:radial-gradient(rgb(20, 102, 4),rgb(100, 255, 3));
+    box-shadow: 0 0 20px rgb(100, 255, 3);
+    transition: background 0.5s;
+    cursor:grab;
+}
+#playAgain:active{
+    transform: scale(0.9);
+}
+#chances{
+    font-size: 20px;
+    font-weight: bold;
+    color:red;
+ 
+}

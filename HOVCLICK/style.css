@@ -1,0 +1,82 @@
+body{
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+    background-color: rgb(129, 120, 120);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+h2{
+    position: relative;
+    bottom:10px;
+    right:10px
+}
+.red,.green,.blue{
+    width:100px;
+    height:50px;
+    border-radius: 5px;
+    background-color: black;
+    border: 1px solid black;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px black;
+}
+
+.row-hover,.row-click{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 20px;
+    margin:60px;
+    
+}
+
+.row-hover .red:hover{
+    background-color: red;
+    box-shadow: 0 0 10px red;
+    transition: background-color 0.8s ease-in-out;
+    cursor: grab;
+}
+.row-hover .green:hover{
+    background-color: green;
+    box-shadow: 0 0 10px green;
+    transition: background-color 0.8s ease-in-out;
+    cursor: grab;
+
+}
+.row-hover .blue:hover{
+    background-color: blue;
+    box-shadow: 0 0 10px blue;
+    transition: background-color 0.8s ease-in-out;
+    cursor: grab;
+
+}
+.row-click .red:active{
+    background-color: red;
+    box-shadow: 0 0 15px red;
+    cursor: grab;
+
+}
+.row-click .green:active{
+    background-color: green;
+    box-shadow: 0 0 15px green;
+    cursor: grab;
+
+}
+.row-click .blue:active{
+    background-color: blue;
+    box-shadow: 0 0 15px blue;
+    cursor: grab;
+
+}

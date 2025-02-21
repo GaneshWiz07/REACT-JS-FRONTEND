@@ -1,0 +1,35 @@
+body{
+   
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+span{
+    background: url("https://img.icons8.com/?size=100&id=101801&format=png&color=000000");
+    position:absolute;
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: flow 6s linear;
+   
+}
+@keyframes flow{
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter:hue-rotate(0);
+    }
+    100%{
+    transform: translate(-50%, -5000%);
+      opacity: 0;
+      filter: hue-rotate(720deg);
+    }
+}
