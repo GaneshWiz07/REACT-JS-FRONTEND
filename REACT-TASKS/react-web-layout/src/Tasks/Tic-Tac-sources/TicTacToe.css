@@ -1,0 +1,92 @@
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #305966;
+  padding: 20px;
+  padding-right:35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.square:nth-child(odd) {
+  color: #e74c3c;
+}
+
+.square:nth-child(even) {
+  color: #2980b9; 
+}
+
+.square:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.winning-square {
+  background-color: #2ecc71 !important; 
+  color: white !important;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.game-info {
+  text-align: center;
+}
+
+.turn, .winner {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.winner {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
